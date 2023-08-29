@@ -30,24 +30,116 @@
   <body>
     <main>
       <!-- main content -->
+      <div class="main__container">
+        <section>
+          <!-- left section -->
+          <div class="section__left">
+            <!-- left heading -->
+            <h1 class="left__heading">Learn to code by watching others</h1>
 
-      <!-- attribution -->
+            <!-- left content -->
+            <p class="left__content">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+
+          <!-- right section -->
+          <div class="section__right">
+            <!-- free trial message -->
+            <div class="free__trial">
+              <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+            </div>
+
+            <!-- form container -->
+            <div class="form__container">
+              <!-- form -->
+              <form action="" class="form">
+                <div class="first__name row">
+                  <div class="input__box">
+                    <input type="text" name="email" placeholder="First Name" />
+                    <img
+                      src="./images/icon-error.svg"
+                      alt=""
+                      class="error__img"
+                    />
+                  </div>
+                  <p class="error__message">First name cannot be empty</p>
+                </div>
+
+                <div class="last__name row">
+                  <div class="input__box">
+                    <input
+                      type="text"
+                      name="last-name"
+                      placeholder="Last Name"
+                    />
+                    <img
+                      src="./images/icon-error.svg"
+                      alt=""
+                      class="error__img"
+                    />
+                  </div>
+                  <p class="error__message">Last Name cannot be empty</p>
+                </div>
+
+                <div class="email row">
+                  <div class="input__box">
+                    <input
+                      type="email"
+                      name="email-address"
+                      placeholder="Email Address"
+                    />
+                    <img
+                      src="./images/icon-error.svg"
+                      alt=""
+                      class="error__img"
+                    />
+                  </div>
+                  <p class="error__message">Looks like this is not an email</p>
+                </div>
+
+                <div class="password row">
+                  <div class="input__box">
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                    <img
+                      src="./images/icon-error.svg"
+                      alt=""
+                      class="error__img"
+                    />
+                  </div>
+                  <p class="error__message">Password cannot be empty</p>
+                </div>
+
+                <button type="button" class="form__button">
+                  Claim your free trial
+                </button>
+              </form>
+
+              <!-- terms and services -->
+              <p class="terms__services">
+                By clicking the button, you are agreeing to our
+                <a href="#">Terms and Services</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/thedevangvishnu">Devang Vishnu</a>.
+        </p>
+      </footer>
     </main>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/thedevangvishnu">Devang Vishnu</a>.
-      </p>
-    </footer>
   </body>
 </html>
