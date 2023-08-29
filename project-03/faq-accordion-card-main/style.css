@@ -65,6 +65,7 @@ main {
   border-radius: 1rem;
   box-shadow: 3px 15px 30px rgba(29, 30, 53, 0.4);
   overflow: hidden;
+  z-index: 1;
 }
 
 .faq__img {
@@ -76,7 +77,7 @@ main {
   width: 150px;
   top: calc(50% - 3rem);
   left: calc(50% - 29.5rem);
-  z-index: 3;
+  z-index: 5;
 }
 
 .woman {
@@ -84,12 +85,12 @@ main {
   width: 360px;
   top: 5rem;
   left: -3.75rem;
-  z-index: 2;
+  z-index: 4;
 }
 
 .shadow {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: -21.5rem;
   left: -42rem;
 }
@@ -187,4 +188,112 @@ main {
 .attribution {
   position: absolute;
   bottom: 1rem;
+}
+
+/* ............................................. */
+
+/* responsiveness for medium screen devices  */
+@media screen and (max-width: 870px) {
+  .faq__container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .box {
+    width: 80px;
+    left: calc(50% - 21.1rem);
+  }
+
+  .woman {
+    width: 260px;
+    left: -21rem;
+  }
+
+  .shadow {
+    width: 280px;
+    left: -21rem;
+    top: 3rem;
+  }
+
+  .faq__content {
+    left: 20%;
+  }
+
+  .faq__title {
+    font-size: 1.5rem;
+  }
+}
+
+/* responsiveness for smaller screen devices  */
+
+@media screen and (max-width: 650px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .faq__container {
+    width: 260px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .faq__img {
+    position: relative;
+  }
+
+  .box {
+    width: 65px;
+    top: calc(50% - 14.5rem);
+    left: calc(50% - 5.75rem);
+  }
+
+  .woman {
+    position: absolute;
+    width: 180px;
+    top: -5.25rem;
+    left: -5.75rem;
+    z-index: 4;
+  }
+
+  .shadow {
+    position: absolute;
+    width: 180px;
+    top: -5.75rem;
+    left: -5.75rem;
+  }
+
+  .faq__content {
+    position: relative;
+    max-width: 80%;
+    left: 0;
+    padding-block: 0;
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem;
+  }
+
+  .faq__title {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .faq__items {
+    font-size: 10px;
+  }
+
+  .arrow {
+    width: 8px;
+    height: 6px;
+  }
 }
